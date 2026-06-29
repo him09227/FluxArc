@@ -281,10 +281,19 @@ nav{
 }
 
 .swap-arrow{
-  width:55px;
-  height:55px;
+  width:60px;
+  height:60px;
+  border:none;
   border-radius:50%;
-  margin:20px auto;
-  display:block;
-  font-size:25px;
+  background:#2563eb;
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(37,99,235,0.5);
+}
+
+.swap-box p{
+  text-align:center;
+  margin-top:20px;
+  color:#94a3b8;
 }
