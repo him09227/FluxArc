@@ -149,3 +149,27 @@ if(rate){
   },3000);
 
 }
+window.addEventListener(
+  "scroll",
+  ()=>{
+
+    const nav =
+      document.querySelector(
+        "nav"
+      );
+
+    if(window.scrollY > 50){
+
+      nav.style.padding =
+        "15px 8%";
+
+    }
+    else{
+
+      nav.style.padding =
+        "20px 8%";
+
+    }
+
+  }
+);
