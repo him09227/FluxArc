@@ -274,6 +274,11 @@ document.getElementById(
   "swapStatus"
 );
 
+const historyList =
+document.getElementById(
+  "historyList"
+);
+
 if(swapBtn){
 
   swapBtn.addEventListener(
