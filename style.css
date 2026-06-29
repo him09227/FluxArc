@@ -241,3 +241,50 @@ nav{
   color:#aaa;
   font-size:18px;
 }
+
+.swap-box{
+  width:90%;
+  max-width:550px;
+  margin:100px auto;
+  padding:40px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.token-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#07152c;
+  padding:20px;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.token-box input{
+  background:none;
+  border:none;
+  color:white;
+  font-size:28px;
+  outline:none;
+  width:180px;
+}
+
+.token-box select{
+  background:#112340;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:12px;
+}
+
+.swap-arrow{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  margin:20px auto;
+  display:block;
+  font-size:25px;
+}
