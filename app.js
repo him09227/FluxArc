@@ -301,3 +301,53 @@ if(swapBtn){
   );
 
 }
+
+const swapArrow =
+document.getElementById(
+  "swapArrow"
+);
+
+const fromToken =
+document.getElementById(
+  "fromToken"
+);
+
+const toToken =
+document.getElementById(
+  "toToken"
+);
+
+if(
+  swapArrow &&
+  fromToken &&
+  toToken &&
+  ethInput &&
+  usdcInput
+){
+
+  swapArrow.addEventListener(
+    "click",
+    ()=>{
+
+      let tempToken =
+        fromToken.value;
+
+      fromToken.value =
+        toToken.value;
+
+      toToken.value =
+        tempToken;
+
+      let tempAmount =
+        ethInput.value;
+
+      ethInput.value =
+        usdcInput.value;
+
+      usdcInput.value =
+        tempAmount;
+
+    }
+  );
+
+}
