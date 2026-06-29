@@ -351,3 +351,46 @@ nav{
   cursor:pointer;
   box-shadow:0 0 20px rgba(37,99,235,0.5);
 }
+
+.portfolio{
+  width:90%;
+  margin:120px auto;
+  text-align:center;
+}
+
+.portfolio h1{
+  font-size:50px;
+  margin-bottom:60px;
+}
+
+.portfolio-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.portfolio-card{
+  width:300px;
+  padding:40px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.4s;
+}
+
+.portfolio-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 30px rgba(37,99,235,0.4);
+}
+
+.portfolio-card h2{
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+
+.portfolio-card h3{
+  font-size:40px;
+  color:#4da6ff;
+}
