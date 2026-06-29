@@ -1,0 +1,19 @@
+{
+  "name": "fluxarc",
+  "version": "1.0.0",
+  "description": "FluxArc - Trade. Flow. Build on ARC.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "defi",
+    "trading",
+    "arc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
