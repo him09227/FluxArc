@@ -125,3 +125,27 @@ window.addEventListener(
 
   }
 );
+
+const rate =
+document.getElementById(
+  "rate"
+);
+
+if(rate){
+
+  setInterval(()=>{
+
+    let price =
+      (
+        2400 +
+        Math.random()*100
+      ).toFixed(2);
+
+    rate.innerText =
+      "1 ETH ≈ " +
+      price +
+      " USDC";
+
+  },3000);
+
+}
