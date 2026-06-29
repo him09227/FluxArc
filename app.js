@@ -296,6 +296,11 @@ if(swapBtn){
         swapStatus.innerText =
           "✅ Swap Completed!";
 
+        const item =
+  "Swapped ETH → USDC";
+
+saveHistory(item);
+
         if(historyList){
 
   const card =
@@ -381,4 +386,21 @@ if(
     }
   );
 
+}
+
+function saveHistory(text){
+
+  let history =
+    JSON.parse(
+      localStorage.getItem(
+        "swapHistory"
+      )
+    ) || [];
+
+  history.unshift(text);
+
+  localStorage.setItem(
+    "swapHistory",
+    JSON.stringify(history)
+  );
 }
