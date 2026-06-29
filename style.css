@@ -541,3 +541,16 @@ footer p{
   background:#16a34a !important;
   box-shadow:0 0 25px rgba(22,163,74,0.5);
 }
+
+#swapStatus{
+  text-align:center;
+  margin-top:20px;
+  color:#22c55e;
+  font-size:18px;
+  opacity:0;
+  transition:0.4s;
+}
+
+.show{
+  opacity:1 !important;
+}
