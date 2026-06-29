@@ -173,3 +173,26 @@ window.addEventListener(
 
   }
 );
+
+const walletBtn =
+document.getElementById(
+  "walletBtn"
+);
+
+if(walletBtn){
+
+  walletBtn.addEventListener(
+    "click",
+    ()=>{
+
+      walletBtn.innerText =
+        "Wallet Connected";
+
+      walletBtn.classList.add(
+        "connected"
+      );
+
+    }
+  );
+
+}
