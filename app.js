@@ -215,3 +215,51 @@ if(walletBtn){
   );
 
 }
+
+const ethInput =
+document.getElementById(
+  "ethInput"
+);
+
+const usdcInput =
+document.getElementById(
+  "usdcInput"
+);
+
+const swapRate = 2435.67;
+
+if(ethInput && usdcInput){
+
+  ethInput.addEventListener(
+    "input",
+    ()=>{
+
+      let eth =
+        parseFloat(
+          ethInput.value
+        ) || 0;
+
+      usdcInput.value =
+        (eth * swapRate)
+        .toFixed(2);
+
+    }
+  );
+
+  usdcInput.addEventListener(
+    "input",
+    ()=>{
+
+      let usdc =
+        parseFloat(
+          usdcInput.value
+        ) || 0;
+
+      ethInput.value =
+        (usdc / swapRate)
+        .toFixed(6);
+
+    }
+  );
+
+}
