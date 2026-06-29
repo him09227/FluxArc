@@ -536,3 +536,8 @@ footer p{
 .footer-links a:hover{
   color:#4da6ff;
 }
+
+.connected{
+  background:#16a34a !important;
+  box-shadow:0 0 25px rgba(22,163,74,0.5);
+}
