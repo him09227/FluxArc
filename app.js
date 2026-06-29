@@ -263,3 +263,41 @@ if(ethInput && usdcInput){
   );
 
 }
+
+const swapBtn =
+document.getElementById(
+  "swapBtn"
+);
+
+const swapStatus =
+document.getElementById(
+  "swapStatus"
+);
+
+if(swapBtn){
+
+  swapBtn.addEventListener(
+    "click",
+    ()=>{
+
+      swapBtn.innerText =
+        "Swapping...";
+
+      setTimeout(()=>{
+
+        swapBtn.innerText =
+          "Swap";
+
+        swapStatus.innerText =
+          "✅ Swap Completed!";
+
+        swapStatus.classList.add(
+          "show"
+        );
+
+      },1500);
+
+    }
+  );
+
+}
