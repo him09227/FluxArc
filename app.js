@@ -38,3 +38,74 @@ function animate(){
 }
 
 animate();
+
+const logoCanvas =
+document.getElementById("logoCanvas");
+
+const lctx =
+logoCanvas.getContext("2d");
+
+logoCanvas.width = 420;
+logoCanvas.height = 420;
+
+let nodes = [];
+
+for(let i=0;i<120;i++){
+
+  nodes.push({
+
+    x:Math.random()*420,
+    y:Math.random()*420,
+
+    tx:210 +
+      Math.cos(i*0.3)*150,
+
+    ty:210 +
+      Math.sin(i*0.3)*150,
+
+    r:2 + Math.random()*3
+  });
+
+}
+
+function animateLogo(){
+
+  lctx.clearRect(
+    0,
+    0,
+    420,
+    420
+  );
+
+  nodes.forEach(n=>{
+
+    n.x +=
+      (n.tx-n.x)*0.02;
+
+    n.y +=
+      (n.ty-n.y)*0.02;
+
+    lctx.beginPath();
+
+    lctx.arc(
+      n.x,
+      n.y,
+      n.r,
+      0,
+      Math.PI*2
+    );
+
+    lctx.fillStyle =
+      "#3b82f6";
+
+    lctx.fill();
+
+  });
+
+  requestAnimationFrame(
+    animateLogo
+  );
+
+}
+
+animateLogo();
