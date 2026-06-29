@@ -499,3 +499,36 @@ nav{
     transform:scale(1);
   }
 }
+
+footer{
+  margin-top:150px;
+  padding:80px 20px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+
+footer h2{
+  font-size:40px;
+  color:#4da6ff;
+}
+
+footer p{
+  color:#94a3b8;
+  margin:20px 0;
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+}
+
+.footer-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:#4da6ff;
+}
