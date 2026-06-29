@@ -404,3 +404,42 @@ function saveHistory(text){
     JSON.stringify(history)
   );
 }
+
+function saveHistory(text){
+
+  let history =
+    JSON.parse(
+      localStorage.getItem(
+        "swapHistory"
+      )
+    ) || [];
+
+  history.unshift(text);
+
+  localStorage.setItem(
+    "swapHistory",
+    JSON.stringify(history)
+  );
+} // ← yahan function khatam
+
+// ↓ ISKE NEECHE PASTE KARO
+const oldHistory =
+  JSON.parse(
+    localStorage.getItem(
+      "swapHistory"
+    )
+  ) || [];
+
+oldHistory.forEach((item)=>{
+
+  if(historyList){
+
+    const li =
+      document.createElement("li");
+
+    li.innerText = item;
+
+    historyList.appendChild(li);
+  }
+
+});
