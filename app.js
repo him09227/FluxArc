@@ -296,6 +296,32 @@ if(swapBtn){
         swapStatus.innerText =
           "✅ Swap Completed!";
 
+        if(historyList){
+
+  const card =
+    document.createElement(
+      "div"
+    );
+
+  card.classList.add(
+    "history-card"
+  );
+
+  card.innerHTML =
+    ethInput.value +
+    " " +
+    fromToken.value +
+    " → " +
+    usdcInput.value +
+    " " +
+    toToken.value;
+
+  historyList.prepend(
+    card
+  );
+
+        }
+
         swapStatus.classList.add(
           "show"
         );
