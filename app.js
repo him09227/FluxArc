@@ -443,3 +443,27 @@ oldHistory.forEach((item)=>{
   }
 
 });
+
+const clearBtn =
+  document.getElementById(
+    "clearHistoryBtn"
+  );
+
+if(clearBtn){
+
+  clearBtn.addEventListener(
+    "click",
+    ()=>{
+
+      localStorage.removeItem(
+        "swapHistory"
+      );
+
+      if(historyList){
+        historyList.innerHTML = "";
+      }
+
+    }
+  );
+
+}
