@@ -179,18 +179,37 @@ document.getElementById(
   "walletBtn"
 );
 
+let connected = false;
+
 if(walletBtn){
 
   walletBtn.addEventListener(
     "click",
     ()=>{
 
-      walletBtn.innerText =
-        "Wallet Connected";
+      if(!connected){
 
-      walletBtn.classList.add(
-        "connected"
-      );
+        walletBtn.innerText =
+          "0x8F3A...7D92";
+
+        walletBtn.classList.add(
+          "connected"
+        );
+
+        connected = true;
+
+      }else{
+
+        walletBtn.innerText =
+          "Connect Wallet";
+
+        walletBtn.classList.remove(
+          "connected"
+        );
+
+        connected = false;
+
+      }
 
     }
   );
