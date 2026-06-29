@@ -467,35 +467,3 @@ if(clearBtn){
   );
 
 }
-
-const walletBtn =
-  document.getElementById(
-    "walletBtn"
-  );
-
-let connected = false;
-
-if(walletBtn){
-
-  walletBtn.addEventListener(
-    "click",
-    ()=>{
-
-      connected = !connected;
-
-      if(connected){
-
-        walletBtn.innerText =
-          "0xA7...9F2C";
-
-      }else{
-
-        walletBtn.innerText =
-          "Connect Wallet";
-
-      }
-
-    }
-  );
-
-}
