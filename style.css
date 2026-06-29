@@ -394,3 +394,58 @@ nav{
   font-size:40px;
   color:#4da6ff;
 }
+
+.market,
+.transactions{
+  width:90%;
+  margin:120px auto;
+  text-align:center;
+}
+
+.market-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.market-card,
+.tx-card{
+  width:300px;
+  padding:35px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.4s;
+  margin:20px auto;
+}
+
+.market-card:hover,
+.tx-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 30px rgba(37,99,235,0.4);
+}
+
+.market-card h2{
+  color:#94a3b8;
+}
+
+.market-card h3{
+  color:#4da6ff;
+  margin:20px 0;
+  font-size:38px;
+}
+
+.market-card p{
+  color:#22c55e;
+}
+
+.tx-card p{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.tx-card small{
+  color:#94a3b8;
+}
