@@ -199,6 +199,11 @@ if(walletBtn){
 
         walletBtn.innerText =
           "0x8F3A...7D92";
+        
+        if(walletBalance){
+  walletBalance.innerText =
+    "Balance: 10000000 USDC";
+        }
 
         walletBtn.classList.add(
           "connected"
