@@ -589,3 +589,10 @@ footer p{
   color:white;
   cursor:pointer;
 }
+
+#walletBalance{
+  margin-top:10px;
+  text-align:center;
+  color:#60a5fa;
+  font-size:14px;
+}
