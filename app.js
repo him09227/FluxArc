@@ -179,7 +179,10 @@ document.getElementById(
   "walletBtn"
 );
 
-let connected = false;
+let connected =
+  localStorage.getItem(
+    "walletConnected"
+  ) === "true";
 
 if(walletBtn){
 
@@ -208,6 +211,10 @@ if(walletBtn){
         );
 
         connected = false;
+localStorage.setItem(
+  "walletConnected",
+  connected
+);
 
       }
 
