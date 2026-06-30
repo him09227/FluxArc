@@ -179,6 +179,11 @@ document.getElementById(
   "walletBtn"
 );
 
+const walletBalance =
+  document.getElementById(
+    "walletBalance"
+  );
+
 let connected =
   localStorage.getItem(
     "walletConnected"
