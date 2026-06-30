@@ -216,6 +216,11 @@ if(walletBtn){
         walletBtn.innerText =
           "Connect Wallet";
 
+        if(walletBalance){
+  walletBalance.innerText =
+    "";
+        }
+
         walletBtn.classList.remove(
           "connected"
         );
